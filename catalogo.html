@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Catálogo - Colibrí Creativo</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <img src="img/logo.png" alt="Colibrí Creativo">
+    </div>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="quienes.html">Quiénes somos</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="personalizacion.html">Personalización</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html">🛒</a>
+    </nav>
+</header>
+
+<!-- CONTENIDO -->
+<main>
+
+<section class="catalogo">
+
+    <h1>Catálogo</h1>
+
+    <div class="productos">
+
+        <div class="card">
+            <img src="img/taz4.jpg" onclick="abrirModal(this.src)">
+
+            <h3>Taza Tomi</h3>
+            <p>$150</p>
+            <button onclick="agregarCarrito('Invitación',150)">Agregar</button>
+        </div>
+
+        <div class="card">
+            <img src="img/taz2.jpg" onclick="abrirModal(this.src)">
+            <h3>Taza Reptar</h3>
+            <p>$250</p>
+            <button onclick="agregarCarrito('Taza',250)">Agregar</button>
+        </div>
+
+        <div class="card">
+            <img src="img/taz3.jpg" onclick="abrirModal(this.src)">
+            <h3>Taza Carlitos</h3>
+            <p>$300</p>
+            <button onclick="agregarCarrito('Caja',300)">Agregar</button>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="modal" onclick="cerrarModal()">
+    <img id="imagenGrande">
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>Contacto: colibri@email.com | Tel: 33 1234 5678</p>
+
+    <div class="redes">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+    </div>
+
+    <p>© 2026 Colibrí Creativo. Todos los derechos reservados.</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

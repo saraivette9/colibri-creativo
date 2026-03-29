@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carrito</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body onload="cargarCarrito()">
+
+<header class="navbar">
+    <div class="logo">
+        <img src="img/logo.png" alt="Colibrí Creativo">
+    </div>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="quienes.html">Quiénes somos</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="personalizacion.html">Personalización</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html" class="carrito">🛒</a>
+    </nav>
+</header>
+<main class="carrito-page">
+
+<h1>Carrito de compras</h1>
+
+<ul id="lista"></ul>
+
+<h2>Total: $<span id="total">0</span></h2>
+
+<h3>Pago con tarjeta</h3>
+
+<form onsubmit="pagar(event)">
+<input type="text" placeholder="Nombre en tarjeta" required>
+<input type="text" placeholder="Número de tarjeta" required>
+<input type="text" placeholder="MM/AA" required>
+<input type="text" placeholder="CVV" required>
+<button>Pagar</button>
+</form>
+
+</main>
+
+<footer>
+<p>© 2026 Colibrí Creativo</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
