@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Colibrí Creativo</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+  <img src="img/logo.png" class="logo">
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="quienes.html">Quiénes somos</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="personalizacion.html">Personalización</a>
+    <a href="contacto.html">Contacto</a>
+
+    <span id="contador-carrito" data-count="0" onclick="toggleCarrito()">
+      🛒
+    </span>
+  </nav>
+
+</header>
+
+<!-- ================= BANNER ================= -->
+<section class="banner">
+  <img src="img/banner1.jpg" alt="Banner principal">
+</section>
+
+<!-- ================= CARRUSEL ================= -->
+<section class="carrusel">
+
+  <h2 style="text-align:center; margin:20px 0;">
+    Productos destacados
+  </h2>
+
+  <div class="carrusel-wrapper">
+
+    <!-- Flechas -->
+    <button class="flecha izquierda" onclick="moverCarrusel(-1)">❮</button>
+    <button class="flecha derecha" onclick="moverCarrusel(1)">❯</button>
+
+    <!-- Track -->
+    <div class="carrusel-track" id="track">
+
+      <div class="card-carrusel">
+        <img src="img/11.jpg">
+        <p>Libreta kiut</p>
+      </div>
+
+      <div class="card-carrusel">
+        <img src="img/6.jpg">
+        <p>Damas de honor</p>
+      </div>
+
+      <div class="card-carrusel">
+        <img src="img/9.jpg">
+        <p>Taza papás</p>
+      </div>
+
+      <div class="card-carrusel">
+        <img src="img/7.jpg">
+        <p>Taza profesiones</p>
+      </div>
+
+      <div class="card-carrusel">
+        <img src="img/4.jpg">
+        <p>Playeras parejas</p>
+      </div>
+
+      <div class="card-carrusel">
+        <img src="img/10.jpg">
+        <p>Taza amigas</p>
+      </div>
+
+      <div class="card-carrusel">
+        <img src="img/5.jpg">
+        <p>Playera abuelos</p>
+      </div>
+
+      <div class="card-carrusel">
+        <img src="img/15.jpg">
+        <p>Playera personalizada</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- BOTÓN -->
+  <div style="text-align:center; margin-top:30px;">
+    <a href="catalogo.html">
+      <button class="btn-principal">Ir al catálogo</button>
+    </a>
+  </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>Contacto: colibricreativo@outlook.com | Tel: 33 2133 2560</p>
+  <p>© 2026 Colibrí Creativo. Todos los derechos reservados.</p>
+</footer>
+
+<!-- ================= CARRITO LATERAL ================= -->
+<div id="carritoLateral" class="carrito-lateral">
+
+  <h3>Tu carrito 🛒</h3>
+
+  <div id="listaCarrito"></div>
+
+  <button onclick="location.href='carrito.html'" class="btn-pagar">
+    Ir a pagar
+  </button>
+
+</div>
+
+<!-- ================= JS ================= -->
+<script src="script.js"></script>
+
+</body>
+</html>
