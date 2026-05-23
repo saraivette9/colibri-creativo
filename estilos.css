@@ -571,13 +571,19 @@ footer{
   }
 
 }
-/* ===== MENÚ HAMBURGUESA ===== */
+/* ===== MENU RESPONSIVO ===== */
 
-.icono{
+#miMenu .icono{
 display:none;
 }
 
 @media screen and (max-width:768px){
+
+#miMenu{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
 #miMenu a:not(.icono){
 display:none;
@@ -590,17 +596,17 @@ display:none;
 #miMenu .icono{
 display:block;
 font-size:28px;
+cursor:pointer;
 }
 
 #miMenu.responsive{
-display:flex;
 flex-direction:column;
 align-items:center;
 }
 
 #miMenu.responsive a{
 display:block;
-margin:10px;
+margin:10px 0;
 }
 
 #miMenu.responsive #contador-carrito{
