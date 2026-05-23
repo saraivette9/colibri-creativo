@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Personalización - Colibrí Creativo</title>
+
+  <!-- FUENTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+  <img src="img/logo.png" class="logo">
+
+  <nav id="miMenu">
+
+    <a href="index.html">Inicio</a>
+    <a href="quienes.html">Quiénes somos</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="personalizacion.html">Personalización</a>
+    <a href="contacto.html">Contacto</a>
+
+    <span id="contador-carrito"
+          data-count="0"
+          onclick="toggleCarrito()">
+      🛒
+    </span>
+
+    <a href="javascript:void(0);" class="icono"
+       onclick="mostrarMenu()">
+       ☰
+    </a>
+
+</nav>
+
+</header>
+
+<!-- ================= CONTENIDO ================= -->
+<section class="personalizacion">
+
+  <h1>Personaliza tu producto ✨</h1>
+
+  <form id="formPersonalizado" class="form-personalizado">
+
+    <!-- DATOS -->
+    <h3>Datos del cliente</h3>
+    <div class="form-grid">
+      <input type="text" id="nombre" placeholder="Nombre completo" required>
+      <input type="email" id="correo" placeholder="Correo electrónico" required>
+      <input type="tel" id="telefono" placeholder="Teléfono" required>
+    </div>
+
+    <!-- DIRECCIÓN -->
+    <h3>Dirección de envío</h3>
+    <div class="form-grid">
+      <input type="text" id="calle" placeholder="Calle" required>
+      <input type="text" id="colonia" placeholder="Colonia" required>
+      <input type="text" id="municipio" placeholder="Municipio" required>
+      <input type="text" id="estado" placeholder="Estado" required>
+      <input type="text" id="pais" placeholder="País" required>
+      <input type="text" id="cp" placeholder="Código Postal" required>
+      <input type="text" id="entreCalles" placeholder="Entre qué calles">
+      <input type="text" id="referencias" placeholder="Referencias adicionales">
+    </div>
+
+    <!-- PRODUCTO -->
+    <h3>Selecciona tu producto</h3>
+    <select id="tipoProducto" required>
+      <option value="">Selecciona una opción</option>
+      <option value="Taza" data-precio="150">Taza - $150</option>
+      <option value="Playera" data-precio="220">Playera - $220</option>
+      <option value="Invitación digital" data-precio="120">Invitación digital - $120</option>
+      <option value="Etiquetas" data-precio="100">Etiquetas - $100</option>
+      <option value="Libretas" data-precio="180">Libretas - $180</option>
+    </select>
+
+    <!-- MENSAJE -->
+    <h3>Detalles de tu diseño</h3>
+    <textarea id="mensaje" placeholder="Describe cómo quieres tu producto"></textarea>
+
+    <!-- IMÁGENES -->
+    <h3>Imágenes de referencia</h3>
+    <input type="file" id="imagenes" multiple accept="image/*">
+
+    <!-- BOTÓN -->
+    <button type="submit" class="btn-personalizado">
+      Agregar personalizado al carrito 💖
+    </button>
+
+  </form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>Contacto: colibricreativo@outlook.com | Tel: 33 2133 2560</p>
+  <p>© 2026 Colibrí Creativo. Todos los derechos reservados.</p>
+</footer>
+
+<!-- ================= CARRITO LATERAL ================= -->
+<div id="carritoLateral" class="carrito-lateral">
+  <h3>Tu carrito 🛒</h3>
+
+  <div id="listaCarrito"></div>
+
+  <button onclick="location.href='carrito.html'" class="btn-pagar">
+    Ir a pagar
+  </button>
+</div>
+
+<!-- ================= JS ================= -->
+<script src="script.js"></script>
+
+</body>
+</html>

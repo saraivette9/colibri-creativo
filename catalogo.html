@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo - Colibrí Creativo</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+  <img src="img/logo.png" class="logo">
+
+  <nav id="miMenu">
+
+    <a href="index.html">Inicio</a>
+    <a href="quienes.html">Quiénes somos</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="personalizacion.html">Personalización</a>
+    <a href="contacto.html">Contacto</a>
+
+    <span id="contador-carrito"
+          data-count="0"
+          onclick="toggleCarrito()">
+      🛒
+    </span>
+
+    <a href="javascript:void(0);" class="icono"
+       onclick="mostrarMenu()">
+       ☰
+    </a>
+
+</nav>
+
+</header>
+
+<!-- ================= CATALOGO ================= -->
+<section class="catalogo">
+
+  <h1>Catálogo</h1>
+
+  <div class="productos">
+
+    <!-- PRODUCTOS COMPLETOS -->
+
+    <!-- 1 -->
+    <div class="producto">
+      <img src="img/2.jpg">
+      <h3>Payera mamá</h3>
+      <p>$250</p>
+      <div>
+        <button onclick="cambiarInput('p1',-1)">-</button>
+        <input id="p1" type="number" value="0">
+        <button onclick="cambiarInput('p1',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Taza Tomi',150,'img/taza1.jpg','p1')">Agregar</button>
+    </div>
+
+    <!-- 2 -->
+    <div class="producto">
+      <img src="img/1.jpg">
+      <h3>Payera papá</h3>
+      <p>$250</p>
+      <div>
+        <button onclick="cambiarInput('p2',-1)">-</button>
+        <input id="p2" type="number" value="0">
+        <button onclick="cambiarInput('p2',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Taza Reptar',250,'img/taza2.jpg','p2')">Agregar</button>
+    </div>
+
+    <!-- 3 -->
+    <div class="producto">
+      <img src="img/3.jpg">
+      <h3>Playera dia del niño</h3>
+      <p>$250</p>
+      <div>
+        <button onclick="cambiarInput('p3',-1)">-</button>
+        <input id="p3" type="number" value="0">
+        <button onclick="cambiarInput('p3',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Taza Carlitos',300,'img/taza3.jpg','p3')">Agregar</button>
+    </div>
+
+    <!-- 4 -->
+    <div class="producto">
+      <img src="img/4.jpg">
+      <h3>Playera pareja</h3>
+      <p>$500</p>
+      <div>
+        <button onclick="cambiarInput('p4',-1)">-</button>
+        <input id="p4" type="number" value="0">
+        <button onclick="cambiarInput('p4',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Taza Angélica',180,'img/taza4.jpg','p4')">Agregar</button>
+    </div>
+
+    <!-- 5 -->
+    <div class="producto">
+      <img src="img/5.jpg">
+      <h3>Payera abuelos</h3>
+      <p>$250</p>
+      <div>
+        <button onclick="cambiarInput('p5',-1)">-</button>
+        <input id="p5" type="number" value="0">
+        <button onclick="cambiarInput('p5',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Taza Chuckie',170,'img/taza5.jpg','p5')">Agregar</button>
+    </div>
+
+    <!-- 6 -->
+    <div class="producto">
+      <img src="img/6.jpg">
+      <h3>Damas de honor</h3>
+      <p>$700</p>
+      <div>
+        <button onclick="cambiarInput('p6',-1)">-</button>
+        <input id="p6" type="number" value="0">
+        <button onclick="cambiarInput('p6',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Playera Tomi',220,'img/playera1.jpg','p6')">Agregar</button>
+    </div>
+
+    <!-- 7 -->
+    <div class="producto">
+      <img src="img/7.jpg">
+      <h3>Taza profesión</h3>
+      <p>$200</p>
+      <div>
+        <button onclick="cambiarInput('p7',-1)">-</button>
+        <input id="p7" type="number" value="0">
+        <button onclick="cambiarInput('p7',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Playera Reptar',240,'img/playera2.jpg','p7')">Agregar</button>
+    </div>
+
+    <!-- 8 -->
+    <div class="producto">
+      <img src="img/8.jpg">
+      <h3>Taza feliz cumple</h3>
+      <p>$200</p>
+      <div>
+        <button onclick="cambiarInput('p8',-1)">-</button>
+        <input id="p8" type="number" value="0">
+        <button onclick="cambiarInput('p8',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Playera Carlitos',260,'img/playera3.jpg','p8')">Agregar</button>
+    </div>
+
+    <!-- 9 -->
+    <div class="producto">
+      <img src="img/9.jpg">
+      <h3>Taza papá</h3>
+      <p>$200</p>
+      <div>
+        <button onclick="cambiarInput('p9',-1)">-</button>
+        <input id="p9" type="number" value="0">
+        <button onclick="cambiarInput('p9',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Invitación Fiesta',120,'img/invitacion1.jpg','p9')">Agregar</button>
+    </div>
+
+    <!-- 10 -->
+    <div class="producto">
+      <img src="img/10.jpg">
+      <h3>Taza amigas</h3>
+      <p>$200</p>
+      <div>
+        <button onclick="cambiarInput('p10',-1)">-</button>
+        <input id="p10" type="number" value="0">
+        <button onclick="cambiarInput('p10',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Invitación Digital',100,'img/invitacion2.jpg','p10')">Agregar</button>
+    </div>
+
+    <!-- 11 -->
+    <div class="producto">
+      <img src="img/11.jpg">
+      <h3>Libreta kiut</h3>
+      <p>$180</p>
+      <div>
+        <button onclick="cambiarInput('p11',-1)">-</button>
+        <input id="p11" type="number" value="0">
+        <button onclick="cambiarInput('p11',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Invitación Premium',180,'img/invitacion3.jpg','p11')">Agregar</button>
+    </div>
+
+    <!-- 12 -->
+    <div class="producto">
+      <img src="img/12.jpg">
+      <h3>Libreta cree</h3>
+      <p>$180</p>
+      <div>
+        <button onclick="cambiarInput('p12',-1)">-</button>
+        <input id="p12" type="number" value="0">
+        <button onclick="cambiarInput('p12',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Producto Especial',200,'img/logo.png','p12')">Agregar</button>
+    </div>
+
+    <!-- 13 -->
+    <div class="producto">
+      <img src="img/13.jpg">
+      <h3>Libreta pasos</h3>
+      <p>$180</p>
+      <div>
+        <button onclick="cambiarInput('p13',-1)">-</button>
+        <input id="p13" type="number" value="0">
+        <button onclick="cambiarInput('p13',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Taza Personalizada',190,'img/taza6.jpg','p13')">Agregar</button>
+    </div>
+
+    <!-- 14 -->
+    <div class="producto">
+      <img src="img/14.jpg">
+      <h3>Taza personalizada</h3>
+      <p>$280</p>
+      <div>
+        <button onclick="cambiarInput('p14',-1)">-</button>
+        <input id="p14" type="number" value="0">
+        <button onclick="cambiarInput('p14',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Playera Especial',280,'img/playera4.jpg','p14')">Agregar</button>
+    </div>
+
+    <!-- 15 -->
+    <div class="producto">
+      <img src="img/15.jpg">
+      <h3>Playera personalizada</h3>
+      <p>$320</p>
+      <div>
+        <button onclick="cambiarInput('p15',-1)">-</button>
+        <input id="p15" type="number" value="0">
+        <button onclick="cambiarInput('p15',1)">+</button>
+      </div>
+      <button onclick="agregarDesdeCatalogo('Invitación Deluxe',220,'img/invitacion4.jpg','p15')">Agregar</button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>Contacto: colibricreativo@outlook.com | Tel: 33 2133 2560</p>
+  <p>© 2026 Colibrí Creativo. Todos los derechos reservados.</p>
+</footer>
+
+<!-- ================= CARRITO ================= -->
+<div id="carritoLateral" class="carrito-lateral">
+  <h3>Tu carrito 🛒</h3>
+  <div id="listaCarrito"></div>
+  <button onclick="location.href='carrito.html'" class="btn-pagar">Ir a pagar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
