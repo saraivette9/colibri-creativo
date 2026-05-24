@@ -7,21 +7,12 @@
 }
 
 body{
-
-background:linear-gradient(
-180deg,
-#fff6fa 0%,
-#fdf4ff 100%
-);
-
-display:flex;
-flex-direction:column;
-
-min-height:100vh;
-
-margin:0;
-
+  background:#f5f5f5;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
 }
+
 /* ================= HEADER ================= */
 .header{
   display:flex;
@@ -36,72 +27,14 @@ margin:0;
 
 .logo{height:50px;}
 
-.logo{
-height:50px;
-}
-
-/* ===== MENU ===== */
-
 nav a{
-
-position:relative;
-margin-left:20px;
-text-decoration:none;
-color:black;
-font-weight:bold;
-padding:8px 0;
-
-transition:.3s;
-
+  margin-left:20px;
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
 }
 
-nav a:hover{
-
-color:#e91e63;
-
-}
-
-/* línea animada */
-
-nav a::after{
-
-content:"";
-
-position:absolute;
-
-left:0;
-bottom:-5px;
-
-width:0;
-height:3px;
-
-background:#e91e63;
-
-border-radius:10px;
-
-transition:.3s;
-
-}
-
-nav a:hover::after{
-
-width:100%;
-
-}
-
-/* página activa */
-
-nav a.activo{
-
-color:#e91e63;
-
-}
-
-nav a.activo::after{
-
-width:100%;
-
-}
+nav a:hover{color:#e91e63;}
 
 /* ================= CARRITO ICONO ================= */
 .carrito-icono{
@@ -296,16 +229,10 @@ box-shadow:0 15px 25px rgba(0,0,0,.15);
 /* IMAGEN */
 
 .producto img{
-
-width:100%;
-
 height:260px;
-
-object-fit:cover;
-
-display:block;
-
-}/* TITULO */
+object-fit:contain;
+}
+/* TITULO */
 
 .producto h3{
 
@@ -493,219 +420,6 @@ grid-template-columns:1fr;
 
 .carrito-lateral.activo{
   right:0;
-}
-/* ================= PAGINA CARRITO ================= */
-
-.carrito-pagina{
-
-display:grid;
-
-grid-template-columns:350px 1fr;
-
-gap:40px;
-
-max-width:1500px;
-
-margin:auto;
-
-padding:40px;
-
-align-items:start;
-
-}
-
-/* PANEL IZQUIERDO */
-
-.resumen-carrito{
-
-background:white;
-
-padding:35px;
-
-border-radius:30px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-position:sticky;
-
-top:100px;
-
-}
-
-/* TITULO CARRITO */
-
-.resumen-carrito h2{
-
-color:#e91e63;
-
-margin-bottom:25px;
-
-}
-
-/* PRODUCTOS DEL CARRITO */
-
-#carrito > div{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-gap:15px;
-
-padding:15px;
-
-margin-bottom:18px;
-
-background:#fff;
-
-border-radius:20px;
-
-box-shadow:0 5px 15px rgba(0,0,0,.05);
-
-}
-
-/* IMAGENES DEL CARRITO */
-
-#carrito img{
-
-width:70px;
-
-height:70px;
-
-object-fit:cover;
-
-border-radius:10px;
-
-}
-
-/* TICKET */
-
-.ticket-compra{
-
-background:white;
-
-margin-top:30px;
-
-padding:35px;
-
-border-radius:20px;
-
-text-align:center;
-
-border-top:4px dashed #ffc1d6;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-font-size:26px;
-
-font-weight:bold;
-
-color:#e91e63;
-
-position:relative;
-
-}
-
-.ticket-compra span{
-
-display:block;
-
-font-size:14px;
-
-letter-spacing:2px;
-
-color:#888;
-
-margin-bottom:15px;
-
-}
-
-/* FORMULARIO */
-
-.form-pago{
-
-background:white;
-
-padding:45px;
-
-border-radius:30px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-}
-
-.form-pago h2{
-
-margin-bottom:25px;
-
-color:#e91e63;
-
-}
-
-.form-pago input{
-
-width:100%;
-
-padding:16px;
-
-margin-bottom:15px;
-
-border:1px solid #eee;
-
-border-radius:15px;
-
-}
-
-/* BOTON PAGAR */
-
-.btn-pagar{
-
-width:100%;
-
-padding:16px;
-
-border:none;
-
-border-radius:30px;
-
-background:linear-gradient(45deg,#ff4081,#b43ad6);
-
-color:white;
-
-font-size:18px;
-
-font-weight:bold;
-
-cursor:pointer;
-
-transition:.3s;
-
-}
-
-.btn-pagar:hover{
-
-transform:scale(1.03);
-
-}
-
-/* RESPONSIVO */
-
-@media(max-width:768px){
-
-.carrito-pagina{
-
-grid-template-columns:1fr;
-
-}
-
-.resumen-carrito{
-
-position:static;
-
-}
-
 }
 
 /* ================= NOSOTROS ================= */
@@ -946,63 +660,10 @@ position:static;
   }
 
   nav{
-display:block;
-position:relative;
-}
-/* MENU MOVIL */
+    display:flex;
+    flex-direction:column;
+  }
 
-#miMenu a:not(.icono){
-
-display:none;
-
-}
-
-#miMenu.responsive a{
-
-display:block;
-
-text-align:center;
-
-margin:20px 0;
-
-}
-
-#miMenu.responsive{
-
-position:fixed;
-
-top:70px;
-
-left:0;
-
-width:100%;
-
-background:white;
-
-padding:20px;
-
-box-shadow:0 10px 20px rgba(0,0,0,.1);
-
-z-index:99999;
-
-}
-.icono{
-
-display:block;
-
-font-size:35px;
-
-cursor:pointer;
-
-position:fixed;
-
-right:15px;
-
-top:20px;
-
-z-index:100000;
-
-}
   /* TITULOS */
   h1{
     font-size:24px;
@@ -1260,24 +921,16 @@ display:block;
 }
 
 .carrito-pagina{
-
 display:grid;
-
 grid-template-columns:420px 1fr;
-
 gap:50px;
-
 max-width:1400px;
-
-margin:0 auto;
-
-padding:60px 30px;
-
+margin:50px auto;
+padding:30px;
 align-items:start;
-
-background:transparent;
-
+background:linear-gradient(180deg,#fff6fa,#fdf4ff);
 }
+
 .resumen-carrito{
 background:white;
 padding:30px;
@@ -1348,118 +1001,7 @@ font-weight:bold;
 @media(max-width:768px){
 .carrito-pagina{grid-template-columns:1fr;}
 }
-/* ================= RESPONSIVE QUIÉNES SOMOS ================= */
 
-@media(max-width:768px){
 
-/* HERO */
-
-.nosotros-hero{
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-text-align:center;
-
-gap:25px;
-
-padding:20px;
-
-}
-
-/* TEXTO */
-
-.nosotros-texto{
-
-width:100%;
-
-}
-
-.nosotros-texto h1{
-
-font-size:32px;
-
-margin-bottom:20px;
-
-}
-
-.nosotros-texto p{
-
-font-size:18px;
-
-line-height:1.8;
-
-}
-
-/* IMAGEN */
-
-.nosotros-img{
-
-width:100%;
-
-display:flex;
-
-justify-content:center;
-
-}
-
-.nosotros-img img{
-
-width:100%;
-
-max-width:350px;
-
-height:auto;
-
-border-radius:20px;
-
-}
-
-/* TARJETAS DE VALORES */
-
-.valores-grid{
-
-display:grid;
-
-grid-template-columns:1fr;
-
-gap:20px;
-
-}
-
-/* TARJETA INDIVIDUAL */
-
-.valor{
-
-width:100%;
-
-}
-
-/* CIERRE */
-
-.nosotros-cierre{
-
-padding:25px;
-
-margin:20px;
-
-}
-
-/* FOOTER */
-
-.footer{
-
-width:100%;
-
-text-align:center;
-
-padding:20px;
-
-}
-
-}
 
 
