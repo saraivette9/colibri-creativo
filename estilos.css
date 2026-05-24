@@ -1227,150 +1227,112 @@ input[type="radio"] + label:hover{
 color:#b43ad6;
 
 }
-/* ================= PERSONALIZACION  FORMULARIO ================= */
-
-/* fondo igual que todo el sitio */
+/* ================= PERSONALIZACION FINAL ================= */
 
 body{
-
 background:linear-gradient(180deg,#fff6fa,#fdf4ff);
 min-height:100vh;
-
 }
-
-/* contenedor */
 
 .personalizacion{
-
-padding:50px 30px;
-
+padding:50px 20px;
 max-width:1200px;
-
 margin:auto;
-
 width:100%;
-
 }
 
-/* formulario más ancho */
+.personalizacion h1{
+text-align:center;
+font-size:48px;
+color:#d94f87;
+margin-bottom:30px;
+}
 
 .form-personalizado{
-
 background:white;
-
 padding:40px;
-
 border-radius:30px;
-
 box-shadow:0 10px 30px rgba(0,0,0,.08);
-
 max-width:1000px;
-
 margin:auto;
-
 }
 
-/* campos más equilibrados */
-
 .form-grid{
-
 display:grid;
-
 grid-template-columns:repeat(2,1fr);
-
 gap:20px;
-
 }
-/* formulario */
-
-.form-personalizado{
-
-background:white;
-
-padding:35px;
-
-border-radius:30px;
-
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-}
-
-/* grid */
-
-.form-grid{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:15px;
-
-}
-
-/* inputs */
 
 .form-personalizado input,
 .form-personalizado select,
 .form-personalizado textarea{
-
 width:100%;
-
 padding:14px;
-
 border:1px solid #ddd;
-
 border-radius:12px;
-
+font-size:14px;
 margin-bottom:15px;
-
 }
 
-/* radio y checkbox */
+.form-personalizado textarea{
+min-height:120px;
+resize:none;
+}
+
+.form-personalizado h3{
+margin:20px 0 10px;
+color:#9c27b0;
+}
 
 .opciones{
-
 display:flex;
-
 flex-direction:column;
-
 gap:15px;
-
 margin:20px 0;
-
 }
 
 .opciones label{
-
 display:flex;
-
 align-items:center;
-
 gap:10px;
-
 color:#777;
-
 font-style:italic;
-
 cursor:pointer;
-
 }
 
 input[type="checkbox"]:checked + label,
 input[type="radio"]:checked + label{
-
 color:#e91e63;
-
 font-weight:bold;
-
 font-style:normal;
-
 }
 
-/* celular */
+.btn-personalizado{
+margin-top:20px;
+padding:16px;
+border:none;
+border-radius:30px;
+background:linear-gradient(45deg,#ff4081,#b43ad6);
+color:white;
+font-size:16px;
+cursor:pointer;
+}
 
 @media(max-width:768px){
 
 .form-grid{
+grid-template-columns:1fr;
+}
+
+.form-personalizado{
+padding:25px;
+}
+
+.personalizacion h1{
+font-size:32px;
+}
+
+}
 
 grid-template-columns:1fr;
 
