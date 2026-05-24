@@ -969,9 +969,9 @@ margin:20px 0;
 
 #miMenu.responsive{
 
-position:absolute;
+position:fixed;
 
-top:80px;
+top:70px;
 
 left:0;
 
@@ -983,10 +983,9 @@ padding:20px;
 
 box-shadow:0 10px 20px rgba(0,0,0,.1);
 
-z-index:9999;
+z-index:99999;
 
 }
-
 .icono{
 
 display:block;
@@ -995,13 +994,16 @@ font-size:35px;
 
 cursor:pointer;
 
-position:absolute;
+position:fixed;
 
-right:20px;
+right:15px;
 
-top:10px;
+top:20px;
 
-}  /* TITULOS */
+z-index:100000;
+
+}
+  /* TITULOS */
   h1{
     font-size:24px;
   }
