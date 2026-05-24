@@ -27,16 +27,62 @@ body{
 
 .logo{height:50px;}
 
+/* ===== MENU EFECTO HOVER + PAGINA ACTIVA ===== */
+
 nav a{
-  margin-left:20px;
-  text-decoration:none;
-  color:black;
-  font-weight:bold;
+
+position:relative;
+margin-left:20px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+padding:8px 0;
+transition:.3s;
+
 }
 
-nav a:hover{color:#e91e63;}
+nav a:hover{
 
-/* ================= CARRITO ICONO ================= */
+color:#e91e63;
+
+}
+
+nav a::after{
+
+content:"";
+position:absolute;
+
+left:0;
+bottom:-5px;
+
+width:0;
+height:3px;
+
+background:#e91e63;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+nav a.activo{
+
+color:#e91e63;
+
+}
+
+nav a.activo::after{
+
+width:100%;
+
+}/* ================= CARRITO ICONO ================= */
 .carrito-icono{
   position:relative;
   cursor:pointer;
@@ -1063,6 +1109,9 @@ padding:25px;
 }
 
 }
+
+
+
 
 
 
