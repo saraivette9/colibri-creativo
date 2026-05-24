@@ -754,13 +754,68 @@ align-items:center;
 justify-content:flex-end;
 gap:20px;
 }
-
 #miMenu a{
+
+position:relative;
 text-decoration:none;
 color:black;
 font-weight:bold;
+padding:8px 0;
+transition:.3s;
+
 }
 
+/* efecto hover */
+
+#miMenu a:hover{
+
+color:#e91e63;
+
+}
+
+/* línea inferior animada */
+
+#miMenu a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+bottom:-5px;
+
+width:0;
+height:3px;
+
+background:#e91e63;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+/* mostrar línea al pasar cursor */
+
+#miMenu a:hover::after{
+
+width:100%;
+
+}
+
+/* página activa */
+
+#miMenu a.activo{
+
+color:#e91e63;
+
+}
+
+#miMenu a.activo::after{
+
+width:100%;
+
+}
 #miMenu .icono{
 display:none;
 }
@@ -1109,7 +1164,6 @@ padding:25px;
 }
 
 }
-
 
 
 
