@@ -286,8 +286,15 @@ box-shadow:0 15px 25px rgba(0,0,0,.15);
 /* IMAGEN */
 
 .producto img{
+
+width:100%;
+
 height:260px;
-object-fit:contain;
+
+object-fit:cover;
+
+display:block;
+
 }
 /* TITULO */
 
@@ -419,7 +426,11 @@ gap:15px;
 
 .producto img{
 
-height:180px;
+width:100%;
+
+height:220px;
+
+object-fit:cover;
 
 }
 
