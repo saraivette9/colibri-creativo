@@ -784,116 +784,85 @@ overflow-x:hidden;
   }
 
 }
-/* ===== MENÚ RESPONSIVO ===== */
-
-#miMenu{
-display:flex;
-align-items:center;
-justify-content:flex-end;
-gap:20px;
-}
-#miMenu a{
-
-position:relative;
-text-decoration:none;
-color:black;
-font-weight:bold;
-padding:8px 0;
-transition:.3s;
-
-}
-
-/* efecto hover */
-
-#miMenu a:hover{
-
-color:#e91e63;
-
-}
-
-/* línea inferior animada */
-
-#miMenu a::after{
-
-content:"";
-
-position:absolute;
-
-left:0;
-bottom:-5px;
-
-width:0;
-height:3px;
-
-background:#e91e63;
-
-border-radius:10px;
-
-transition:.3s;
-
-}
-
-/* mostrar línea al pasar cursor */
-
-#miMenu a:hover::after{
-
-width:100%;
-
-}
-
-/* página activa */
-
-#miMenu a.activo{
-
-color:#e91e63;
-
-}
-
-#miMenu a.activo::after{
-
-width:100%;
-
-}
-#miMenu .icono{
-display:none;
-}
-
 @media screen and (max-width:768px){
 
 #miMenu{
+
 width:100%;
+
 justify-content:flex-end;
+
+height:auto;
+
+overflow:hidden;
+
 }
 
-#miMenu a:not(.icono){
-display:none;
-}
+/* ocultar elementos */
 
+#miMenu a:not(.icono),
 #contador-carrito{
+
 display:none;
+
 }
+
+/* icono hamburguesa */
 
 #miMenu .icono{
+
 display:block;
+
 font-size:28px;
+
 cursor:pointer;
+
+z-index:10001;
+
 }
 
+/* menú abierto */
+
 #miMenu.responsive{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:white;
+
 display:flex;
+
 flex-direction:column;
+
 align-items:center;
-padding-top:15px;
+
+padding:20px;
+
+z-index:9999;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
 }
 
 #miMenu.responsive a{
+
 display:block;
-margin:10px 0;
+
+margin:15px 0;
+
 }
 
 #miMenu.responsive #contador-carrito{
+
 display:block;
+
 margin-top:10px;
+
 }
 
 }
