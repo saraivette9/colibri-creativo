@@ -1295,4 +1295,116 @@ font-weight:bold;
 @media(max-width:768px){
 .carrito-pagina{grid-template-columns:1fr;}
 }
+/* ================= RESPONSIVE QUIÉNES SOMOS ================= */
 
+@media(max-width:768px){
+
+/* HERO */
+
+.nosotros-hero{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+gap:25px;
+
+padding:20px;
+
+}
+
+/* TEXTO */
+
+.nosotros-texto{
+
+width:100%;
+
+}
+
+.nosotros-texto h1{
+
+font-size:32px;
+
+margin-bottom:20px;
+
+}
+
+.nosotros-texto p{
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+/* IMAGEN */
+
+.nosotros-img{
+
+width:100%;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.nosotros-img img{
+
+width:100%;
+
+max-width:350px;
+
+height:auto;
+
+border-radius:20px;
+
+}
+
+/* TARJETAS DE VALORES */
+
+.valores-grid{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+/* TARJETA INDIVIDUAL */
+
+.valor{
+
+width:100%;
+
+}
+
+/* CIERRE */
+
+.nosotros-cierre{
+
+padding:25px;
+
+margin:20px;
+
+}
+
+/* FOOTER */
+
+.footer{
+
+width:100%;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+}
