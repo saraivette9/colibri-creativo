@@ -1063,6 +1063,72 @@ padding:25px;
 }
 
 }
+/* ===== MENU EFECTO HOVER + PAGINA ACTIVA ===== */
+
+nav a{
+
+position:relative;
+margin-left:20px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+padding:8px 0;
+
+transition:.3s;
+
+}
+
+/* color al pasar cursor */
+
+nav a:hover{
+
+color:#e91e63;
+
+}
+
+/* línea animada */
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+bottom:-5px;
+
+width:0;
+height:3px;
+
+background:#e91e63;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+/* mostrar línea al pasar cursor */
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+/* página activa */
+
+nav a.activo{
+
+color:#e91e63;
+
+}
+
+nav a.activo::after{
+
+width:100%;
+
+}
 
 
 
