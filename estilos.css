@@ -228,8 +228,17 @@ text-align:center;
 }
 
 .catalogo h1{
-font-size:50px;
-margin-bottom:50px;
+
+text-align:center;
+
+font-size:48px;
+
+color:#d94f87;
+
+margin-bottom:30px;
+
+font-weight:bold;
+
 }
 
 /* CONTENEDOR PRODUCTOS */
