@@ -524,7 +524,6 @@ grid-template-columns:1fr;
   margin-bottom:40px;
 }
 
-/* 🔥 ESTE ES EL FIX IMPORTANTE */
 .valores-grid{
   display:grid;
   grid-template-columns:repeat(4, 1fr);
@@ -646,10 +645,8 @@ grid-template-columns:1fr;
   cursor:pointer;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= RESPONSIVE TABLETS (768px)================= */
 
-   🔹 TABLETS (768px)
-========================================= */
 @media(max-width: 768px){
 
   /* HEADER */
@@ -695,9 +692,7 @@ grid-template-columns:1fr;
   }
 
 }
-/* =========================================
-   🔹 CELULARES (480px)
-========================================= */
+/* ========== CELULARES (480px)================= */
 @media(max-width: 480px){
 
   /* HEADER */
@@ -973,7 +968,7 @@ align-items:center;
 
 }
 
-/* SOLO la imagen del visor */
+/* Solo la imagen del visor */
 
 #imagenGrande{
 
@@ -1162,6 +1157,219 @@ text-align:center;
 margin:30px 10px;
 padding:25px;
 }
+  /* ================= CHECKBOX Y RADIO ================= */
+
+.opciones{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+margin:20px 0;
+
+}
+
+/* espacio entre el control y texto */
+
+.opciones input{
+
+margin-right:10px;
+
+cursor:pointer;
+
+}
+
+/* etiquetas normales */
+
+input[type="checkbox"] + label,
+input[type="radio"] + label{
+
+color:#777;
+
+font-style:italic;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+/* cuando selecciona una opción */
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label{
+
+color:#e91e63;
+
+font-weight:bold;
+
+font-style:normal;
+
+font-size:16px;
+
+}
+
+/* efecto hover */
+
+input[type="checkbox"] + label:hover,
+input[type="radio"] + label:hover{
+
+color:#b43ad6;
+
+}
+/* ================= PERSONALIZACION  FORMULARIO ================= */
+
+/* fondo igual que todo el sitio */
+
+body{
+
+background:linear-gradient(180deg,#fff6fa,#fdf4ff);
+min-height:100vh;
+
+}
+
+/* contenedor */
+
+.personalizacion{
+
+padding:50px 30px;
+
+max-width:1200px;
+
+margin:auto;
+
+width:100%;
+
+}
+
+/* formulario más ancho */
+
+.form-personalizado{
+
+background:white;
+
+padding:40px;
+
+border-radius:30px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+max-width:1000px;
+
+margin:auto;
+
+}
+
+/* campos más equilibrados */
+
+.form-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+/* formulario */
+
+.form-personalizado{
+
+background:white;
+
+padding:35px;
+
+border-radius:30px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/* grid */
+
+.form-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+}
+
+/* inputs */
+
+.form-personalizado input,
+.form-personalizado select,
+.form-personalizado textarea{
+
+width:100%;
+
+padding:14px;
+
+border:1px solid #ddd;
+
+border-radius:12px;
+
+margin-bottom:15px;
+
+}
+
+/* radio y checkbox */
+
+.opciones{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+margin:20px 0;
+
+}
+
+.opciones label{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+color:#777;
+
+font-style:italic;
+
+cursor:pointer;
+
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label{
+
+color:#e91e63;
+
+font-weight:bold;
+
+font-style:normal;
+
+}
+
+/* celular */
+
+@media(max-width:768px){
+
+.form-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
 
 }
 
