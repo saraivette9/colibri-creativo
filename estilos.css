@@ -494,6 +494,759 @@ grid-template-columns:1fr;
 .carrito-lateral.activo{
   right:0;
 }
+/* ================= PAGINA CARRITO ================= */
+
+.carrito-pagina{
+
+display:grid;
+
+grid-template-columns:350px 1fr;
+
+gap:40px;
+
+max-width:1500px;
+
+margin:auto;
+
+padding:40px;
+
+align-items:start;
+
+}
+
+/* PANEL IZQUIERDO */
+
+.resumen-carrito{
+
+background:white;
+
+padding:35px;
+
+border-radius:30px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+position:sticky;
+
+top:100px;
+
+}
+
+/* TITULO CARRITO */
+
+.resumen-carrito h2{
+
+color:#e91e63;
+
+margin-bottom:25px;
+
+}
+
+/* PRODUCTOS DEL CARRITO */
+
+#carrito > div{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:15px;
+
+padding:15px;
+
+margin-bottom:18px;
+
+background:#fff;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+}
+
+/* IMAGENES DEL CARRITO */
+
+#carrito img{
+
+width:70px;
+
+height:70px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+}
+
+/* TICKET */
+
+.ticket-compra{
+
+background:white;
+
+margin-top:30px;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+border-top:4px dashed #ffc1d6;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+font-size:26px;
+
+font-weight:bold;
+
+color:#e91e63;
+
+position:relative;
+
+}
+
+.ticket-compra span{
+
+display:block;
+
+font-size:14px;
+
+letter-spacing:2px;
+
+color:#888;
+
+margin-bottom:15px;
+
+}
+
+/* FORMULARIO */
+
+.form-pago{
+
+background:white;
+
+padding:45px;
+
+border-radius:30px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.form-pago h2{
+
+margin-bottom:25px;
+
+color:#e91e63;
+
+}
+
+.form-pago input{
+
+width:100%;
+
+padding:16px;
+
+margin-bottom:15px;
+
+border:1px solid #eee;
+
+border-radius:15px;
+
+}
+
+/* BOTON PAGAR */
+
+.btn-pagar{
+
+width:100%;
+
+padding:16px;
+
+border:none;
+
+border-radius:30px;
+
+background:linear-gradient(45deg,#ff4081,#b43ad6);
+
+color:white;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.btn-pagar:hover{
+
+transform:scale(1.03);
+
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+.carrito-pagina{
+
+grid-template-columns:1fr;
+
+}
+
+.resumen-carrito{
+
+position:static;
+
+}
+
+}
+
+/* ================= NOSOTROS ================= */
+
+.nosotros{
+  max-width:1200px;
+  margin:0 auto;
+  padding:60px 20px;
+}
+
+/* HERO */
+.nosotros-hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+  margin-bottom:80px;
+}
+
+.nosotros-texto{
+  flex:1;
+}
+
+.nosotros-texto h1{
+  font-size:60px;
+  color:#d94f87;
+  margin-bottom:20px;
+}
+
+.nosotros-texto p{
+  font-size:18px;
+  line-height:1.6;
+  color:#444;
+}
+
+.nosotros-img{
+  flex:1;
+}
+
+.nosotros-img img{
+  width:100%;
+  border-radius:20px;
+}
+
+/* ================= ¿POR QUÉ ELEGIRNOS? ================= */
+
+.nosotros-valores{
+  width:100%;
+  margin:60px auto;
+  text-align:center;
+}
+
+.nosotros-valores h2{
+  font-size:32px;
+  color:#d94f87;
+  margin-bottom:40px;
+}
+
+/* 🔥 ESTE ES EL FIX IMPORTANTE */
+.valores-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:25px;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+/* TARJETAS */
+.valor{
+  background:#fff;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  text-align:left;
+}
+
+.valor h3{
+  color:#9c27b0;
+  margin-bottom:10px;
+}
+
+.valor p{
+  color:#555;
+  font-size:14px;
+}
+
+/* ================= SECCIÓN FINAL ================= */
+
+.nosotros-cierre{
+  margin-top:60px;
+  max-width:1100px;
+  margin-left:auto;
+  margin-right:auto;
+  background:linear-gradient(90deg,#f8cdda,#d1c4e9);
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+}
+
+.nosotros-cierre h2{
+  color:#d94f87;
+  margin-bottom:10px;
+}
+/* ================= PERSONALIZACIÓN ================= */
+
+.personalizacion{
+  max-width:900px;
+  margin:60px auto;
+  padding:20px;
+}
+
+.personalizacion h1{
+  text-align:center;
+  font-size:36px;
+  color:#d94f87;
+  margin-bottom:30px;
+}
+
+/* FORM */
+.form-personalizado{
+  background:#fff;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* GRID COMO TU IMAGEN */
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+/* INPUTS */
+.form-personalizado input,
+.form-personalizado select,
+.form-personalizado textarea{
+  width:100%;
+  padding:14px;
+  border-radius:12px;
+  border:1px solid #ddd;
+  font-size:14px;
+}
+
+/* CAMPOS GRANDES */
+.form-personalizado textarea{
+  grid-column:span 2;
+  min-height:120px;
+}
+
+/* SELECT */
+.form-personalizado select{
+  grid-column:span 2;
+}
+
+/* FILE */
+.form-personalizado input[type="file"]{
+  grid-column:span 2;
+}
+
+/* TITULOS SECCION */
+.form-personalizado h3{
+  grid-column:span 2;
+  margin-top:20px;
+  color:#9c27b0;
+}
+
+/* BOTÓN */
+.btn-personalizado{
+  grid-column:span 2;
+  margin-top:20px;
+  padding:16px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(90deg,#ff4081,#9c27b0);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+   🔹 TABLETS (768px)
+========================================= */
+@media(max-width: 768px){
+
+  /* HEADER */
+  .header{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  nav a{
+    display:block;
+    margin:10px 0;
+  }
+
+  /* CARRUSEL */
+  .card-carrusel{
+    min-width:200px;
+  }
+
+  /* CONTACTO */
+  .contacto-container{
+    grid-template-columns:1fr;
+  }
+
+  /* NOSOTROS */
+  .nosotros-hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .valores-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  /* PERSONALIZACIÓN */
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* CATALOGO */
+  .productos{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+/* =========================================
+   🔹 CELULARES (480px)
+========================================= */
+@media(max-width: 480px){
+
+  /* HEADER */
+  .logo{
+    height:40px;
+  }
+
+  nav{
+display:block;
+position:relative;
+}
+/* MENU MOVIL */
+
+#miMenu a:not(.icono){
+
+display:none;
+
+}
+
+#miMenu.responsive a{
+
+display:block;
+
+text-align:center;
+
+margin:20px 0;
+
+}
+
+#miMenu.responsive{
+
+position:fixed;
+
+top:70px;
+
+left:0;
+
+width:100%;
+
+background:white;
+
+padding:20px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+z-index:99999;
+
+}
+.icono{
+
+display:block;
+
+font-size:35px;
+
+cursor:pointer;
+
+position:fixed;
+
+right:15px;
+
+top:20px;
+
+z-index:100000;
+
+}
+  /* TITULOS */
+  h1{
+    font-size:24px;
+  }
+
+  h2{
+    font-size:20px;
+  }
+
+  /* CARRUSEL */
+  .card-carrusel{
+    min-width:150px;
+  }
+
+  /* CATALOGO */
+  .productos{
+    grid-template-columns:1fr;
+  }
+
+  /* BOTONES */
+  .btn-principal{
+    width:100%;
+  }
+
+  /* REDES */
+  .redes-info img{
+    width:60px;
+    height:60px;
+  }
+
+  /* FORMULARIOS */
+  input, textarea{
+    font-size:14px;
+  }
+
+}
+/* ===== MENÚ RESPONSIVO ===== */
+
+#miMenu{
+display:flex;
+align-items:center;
+justify-content:flex-end;
+gap:20px;
+}
+
+#miMenu a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+
+#miMenu .icono{
+display:none;
+}
+
+@media screen and (max-width:768px){
+
+#miMenu{
+width:100%;
+justify-content:flex-end;
+}
+
+#miMenu a:not(.icono){
+display:none;
+}
+
+#contador-carrito{
+display:none;
+}
+
+#miMenu .icono{
+display:block;
+font-size:28px;
+cursor:pointer;
+}
+
+#miMenu.responsive{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding-top:15px;
+}
+
+#miMenu.responsive a{
+display:block;
+margin:10px 0;
+}
+
+#miMenu.responsive #contador-carrito{
+display:block;
+margin-top:10px;
+}
+
+}
+/* ===== CONTACTO ===== */
+
+.banner-contacto{
+margin:0;
+padding:0;
+width:100%;
+}
+
+.banner-contacto img{
+width:100%;
+height:auto;
+display:block;
+margin:0;
+padding:0;
+}
+
+.contacto{
+background:#fff6f9;
+padding:50px 20px;
+}
+
+.contacto-container{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contacto-form,
+.contacto-info{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.contacto-form h2{
+margin-bottom:20px;
+}
+
+.contacto-form input,
+.contacto-form textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border-radius:12px;
+border:1px solid #ddd;
+box-sizing:border-box;
+}
+
+.contacto-form button{
+width:100%;
+padding:14px;
+background:#e91e63;
+color:white;
+border:none;
+border-radius:12px;
+cursor:pointer;
+}
+
+.contacto-info h3{
+margin-top:15px;
+color:#e91e63;
+}
+
+.redes-info{
+display:flex;
+gap:15px;
+margin-top:15px;
+}
+
+.redes-info img{
+width:80px;
+height:80px;
+border-radius:50%;
+cursor:pointer;
+transition:.3s;
+}
+
+.redes-info img:hover{
+transform:scale(1.1);
+}
+
+@media(max-width:768px){
+
+.contacto-container{
+grid-template-columns:1fr;
+}
+
+}
+/* ========= VISOR DE IMAGEN ========= */
+
+.visor{
+
+display:none;
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.9);
+
+z-index:9999;
+
+justify-content:center;
+align-items:center;
+
+}
+
+/* SOLO la imagen del visor */
+
+#imagenGrande{
+
+max-width:85%;
+
+max-height:85%;
+
+width:auto;
+
+height:auto;
+
+border-radius:15px;
+
+box-shadow:0 0 20px rgba(255,255,255,.3);
+
+}
+
+.cerrar{
+
+position:absolute;
+
+top:20px;
+right:30px;
+
+font-size:45px;
+
+color:white;
+
+cursor:pointer;
+
+z-index:10000;
+
+}
+
+
 /* ===== CARRITO LIMPIO ===== */
 
 .carrito-lateral img,
@@ -708,4 +1461,5 @@ padding:20px;
 }
 
 }
+
 
