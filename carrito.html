@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Carrito | Colibrí Creativo</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+<img src="img/logo.png" class="logo">
+
+<nav id="miMenu">
+
+<a href="index.html">Inicio</a>
+
+<a href="quienes.html">Quiénes somos</a>
+
+<a href="catalogo.html">Catálogo</a>
+
+<a href="personalizacion.html">Personalización</a>
+
+<a href="contacto.html">Contacto</a>
+
+<span
+id="contador-carrito"
+onclick="abrirCarrito()"
+data-count="0">
+
+🛒
+
+</span>
+<a href="javascript:void(0);"
+class="icono"
+onclick="mostrarMenu()">
+
+☰
+
+</a>
+
+</nav>
+
+</header>
+
+
+<!-- ================= CONTENIDO ================= -->
+
+<main>
+
+<div class="carrito-pagina">
+
+    <!-- PANEL IZQUIERDO -->
+    <div class="resumen-carrito">
+
+        <h2>Tu carrito 🛒</h2>
+
+        <!-- Productos -->
+        <div id="carrito"></div>
+
+        <!-- Ticket -->
+        <h2 id="total" class="ticket-compra">
+
+            <span>RESUMEN DE COMPRA</span>
+
+            Total: $0
+
+        </h2>
+
+    </div>
+
+
+    <!-- PANEL DERECHO -->
+    <div class="form-pago">
+
+        <h2>Dirección de envío</h2>
+
+        <input type="text" placeholder="Nombre">
+
+        <input type="text" placeholder="Apellidos">
+
+        <input type="text" placeholder="Dirección">
+
+        <input type="text" placeholder="Casa, departamento, etc. (opcional)">
+
+
+        <div style="display:flex; gap:10px;">
+
+            <input type="text" placeholder="Código postal">
+
+            <input type="text" placeholder="Ciudad">
+
+            <input type="text" placeholder="Estado">
+
+        </div>
+
+
+        <input type="text" placeholder="Teléfono">
+
+
+        <h2>Pago</h2>
+
+        <input type="text" placeholder="Número de tarjeta">
+
+        <input type="text" placeholder="Nombre del titular">
+
+
+        <div style="display:flex; gap:10px;">
+
+            <input type="text" placeholder="MM/AA">
+
+            <input type="text" placeholder="CVV">
+
+        </div>
+
+
+        <button class="btn-pagar" onclick="pagar()">
+
+            Pagar ahora
+
+        </button>
+
+    </div>
+
+</div>
+
+</main>
+
+
+
+<!-- ================= CARRITO LATERAL ================= -->
+
+<div
+id="carritoLateral"
+class="carrito-lateral">
+
+<h3>
+
+Tu carrito 🛒
+
+</h3>
+
+<div id="listaCarrito">
+
+</div>
+
+<button
+onclick="location.href='carrito.html'"
+class="btn-pagar">
+
+Ir a pagar
+
+</button>
+
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+<p>
+
+Contacto:
+colibri@email.com |
+Tel: 33 1234 5678
+
+</p>
+
+<p>
+
+© 2026 Colibrí Creativo.
+Todos los derechos reservados.
+
+</p>
+
+</footer>
+
+
+
+<!-- ================= JS ================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
