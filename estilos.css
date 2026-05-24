@@ -496,13 +496,19 @@ grid-template-columns:1fr;
   padding:20px;
   transition:0.3s;
   overflow-y:auto;
-  z-index:999;
+  z-index:10000;
 }
 
 .carrito-lateral.activo{
   right:0;
 }
 
+/* evita espacio blanco en celular */
+
+html,
+body{
+overflow-x:hidden;
+}
 /* ================= NOSOTROS ================= */
 
 .nosotros{
