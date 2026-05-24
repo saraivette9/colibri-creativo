@@ -80,15 +80,82 @@ onclick="mostrarMenu()">
     <textarea id="mensaje" placeholder="Describe cómo quieres tu producto"></textarea>
 
     <!-- IMÁGENES -->
-    <h3>Imágenes de referencia</h3>
-    <input type="file" id="imagenes" multiple accept="image/*">
+<h3>Imágenes de referencia</h3>
 
-    <!-- BOTÓN -->
-    <button type="submit" class="btn-personalizado">
-      Agregar personalizado al carrito 💖
-    </button>
+<input type="file"
+id="imagenes"
+multiple
+accept="image/*">
 
-  </form>
+
+<!-- ENTREGA -->
+
+<h3>Tipo de entrega</h3>
+
+<div class="opciones">
+
+<input type="radio"
+id="domicilio"
+name="entrega">
+
+<label for="domicilio">
+
+Envío a domicilio 🚚
+
+</label>
+
+
+<input type="radio"
+id="recoger"
+name="entrega">
+
+<label for="recoger">
+
+Recoger en tienda 🏪
+
+</label>
+
+</div>
+
+
+<!-- OPCIONES -->
+
+<h3>Opciones adicionales</h3>
+
+<div class="opciones">
+
+<input type="checkbox"
+id="envoltura">
+
+<label for="envoltura">
+
+Envoltura para regalo 🎁
+
+</label>
+
+
+<input type="checkbox"
+id="tarjeta">
+
+<label for="tarjeta">
+
+Agregar tarjeta personalizada 💌
+
+</label>
+
+</div>
+
+
+<!-- BOTÓN -->
+
+<button type="submit"
+class="btn-personalizado">
+
+Agregar personalizado al carrito 💖
+
+</button>
+
+</form>
 
 </section>
 
