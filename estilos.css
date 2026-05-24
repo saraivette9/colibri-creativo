@@ -946,11 +946,62 @@ position:static;
   }
 
   nav{
-    display:flex;
-    flex-direction:column;
-  }
+display:block;
+position:relative;
+}
+/* MENU MOVIL */
 
-  /* TITULOS */
+#miMenu a:not(.icono){
+
+display:none;
+
+}
+
+#miMenu.responsive a{
+
+display:block;
+
+text-align:center;
+
+margin:20px 0;
+
+}
+
+#miMenu.responsive{
+
+position:absolute;
+
+top:80px;
+
+left:0;
+
+width:100%;
+
+background:white;
+
+padding:20px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+z-index:9999;
+
+}
+
+.icono{
+
+display:block;
+
+font-size:35px;
+
+cursor:pointer;
+
+position:absolute;
+
+right:20px;
+
+top:10px;
+
+}  /* TITULOS */
   h1{
     font-size:24px;
   }
