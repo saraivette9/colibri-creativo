@@ -485,7 +485,7 @@ grid-template-columns:1fr;
   padding:10px;
 }
 
-/* ================= CARRITO LATERAL ================= */
+/* ================= CARRITO  DESPLIEGUE DEL ICONO================= */
 .carrito-lateral{
   position:fixed;
   right:-300px;
@@ -610,7 +610,7 @@ overflow-x:hidden;
   color:#d94f87;
   margin-bottom:10px;
 }
-/* ================= PERSONALIZACIÓN ================= */
+/* ================= PERSONALIZACIÓN 1 ================= */
 
 .personalizacion{
   max-width:900px;
@@ -736,64 +736,80 @@ overflow-x:hidden;
 }
 /* ===== CELULARES (480px)================ */
 
-@media(max-width: 480px){
+@media(max-width:480px){
 
-  /* HEADER */
-  .logo{
-    height:40px;
-  }
+/* HEADER */
 
-  nav{
-    display:flex;
-    flex-direction:column;
-  }
+.logo{
+height:40px;
+}
 
-  /* TITULOS */
-  h1{
-    font-size:24px;
-  }
+nav{
+display:flex;
+flex-direction:column;
+}
 
-  h2{
-    font-size:20px;
-  }
+/* TITULOS */
 
-  /* CARRUSEL */
-  .card-carrusel{
-    min-width:150px;
-  }
+h1{
+font-size:24px;
+}
 
-  /* CATALOGO */
-  .productos{
-    grid-template-columns:1fr;
-  }
+h2{
+font-size:20px;
+}
 
-  /* BOTONES */
-  .btn-principal{
-    width:100%;
-  }
+/* CARRUSEL */
 
-  /* REDES */
-  .redes-info img{
-    width:60px;
-    height:60px;
-  }
+.card-carrusel{
+min-width:150px;
+}
 
-  /* FORMULARIOS */
-  input, textarea{
-    font-size:14px;
-  }
+/* CATALOGO */
+
+.productos{
+grid-template-columns:1fr;
+}
+
+/* BOTONES */
+
+.btn-principal{
+width:100%;
+}
+
+/* REDES */
+
+.redes-info img{
+width:60px;
+height:60px;
+}
+
+/* FORMULARIOS */
+
+input,
+textarea{
+font-size:14px;
+}
 
 }
+
+/* ===== MENU RESPONSIVO ===== */
+
+/* ocultar hamburguesa en escritorio */
+
+#miMenu .icono{
+
+display:none;
+
+}
+
 @media screen and (max-width:768px){
 
 #miMenu{
 
 width:100%;
-
 justify-content:flex-end;
-
 height:auto;
-
 overflow:hidden;
 
 }
@@ -1016,7 +1032,7 @@ z-index:10000;
 }
 
 
-/* ===== CARRITO LIMPIO ===== */
+/* ===== CARRITO CONTROLA HTML===== */
 
 .carrito-lateral img,
 .item-carrito img,
@@ -1235,7 +1251,7 @@ input[type="radio"] + label:hover{
 color:#b43ad6;
 
 }
-/* ================= PERSONALIZACION FINAL ================= */
+/* ================= PERSONALIZACION FORMULARIO ================= */
 
 body{
 background:linear-gradient(180deg,#fff6fa,#fdf4ff);
